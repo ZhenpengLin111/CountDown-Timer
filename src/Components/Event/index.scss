@@ -1,0 +1,81 @@
+.Event {
+  width: 50%;
+}
+.Event-box {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+  transition: all .3s ease;
+
+  h1 {
+    margin: 0px;
+  }
+
+  .event-name {
+    font-size: 3.5em;
+    color: white;
+  }
+
+  .countdown-container {
+    margin-top: 30px;
+    display: flex;
+
+    .countdown {
+      padding: 0px 15px;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      
+      :nth-child(1) {
+        font-size: 4em;
+      }
+    }
+
+    .colon {
+      font-size: 3em;
+      color: silver;
+    }
+  }
+
+  .delBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .5s ease;
+  }
+  .delBtn:hover {
+    background-color: white;
+    transform: scale(1.2);
+  //   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+}
+
+.Event-box:hover {
+  background-color: rgba(0,0,0,0.6);
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
+
+  .event-name {
+    color: #a696c8;
+  }
+
+  .colon {
+    color: black;
+  }
+}

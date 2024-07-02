@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  top: 0;
+  margin: auto;
+  z-index: 99;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: .5s ease-in-out;
+}
+
+.show {
+  background-color: #f5f5f5;
+}

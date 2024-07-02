@@ -1,0 +1,71 @@
+.addCountDown {
+  width: 100%;
+}
+
+.addBtn {
+  margin: auto;
+  margin-top: 40px;
+  width: 50%;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.4);
+  // filter: blur(8px);
+  // -webkit-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  .plusIcon {
+    color: white;
+    font-size: 15em;
+  }
+}
+
+.addBtn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.css-9emuhu-MuiPaper-root-MuiDrawer-paper {
+  border-radius: 20px;
+  width: 500px;
+  margin: auto;
+  background-color: rgba(0,0,0,0.8);
+
+  .css-imtqqp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbf9fa;
+
+    h1 {
+      text-align: left;
+    }
+
+    .textIpt {
+      margin-bottom: 10px;
+    }
+
+    .dateIpt {
+      margin-bottom: 10px;
+    }
+
+    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+      width: 300px;
+    }
+
+    .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+      width: 300px;
+    }
+
+    .css-sghohy-MuiButtonBase-root-MuiButton-root {
+      background-color: black;
+    }
+    .css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+      background-color: silver;
+      color: black;
+    }
+  }
+}
