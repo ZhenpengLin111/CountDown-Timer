@@ -28,7 +28,7 @@ To run the project locally, follow these steps:
 
 Follow these steps to use the app:
 
--**Getting Started**
+**Getting Started**
 
 1. Open the App:
 
@@ -55,7 +55,7 @@ Follow these steps to use the app:
    - You can define multiple events.
    - For each event you define, a separate countdown timer will appear, each decrementing in real-time.
 
-- **Real-Time Countdown**
+**Real-Time Countdown**
 
 - The countdown timer will automatically update, decrementing the time remaining until the event.
 - When the seconds count reaches 0, the minutes count will decrement by 1, and the seconds will start counting down from 59.
