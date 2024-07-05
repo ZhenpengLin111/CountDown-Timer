@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import TextField from '@mui/material/TextField';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import './index.scss'
 export const AddCountDown = ({ onGetEvents }) => {
@@ -68,7 +68,7 @@ export const AddCountDown = ({ onGetEvents }) => {
               }
             }}
           />
-          <Button variant="contained" onClick={sendEvent}>Set Countdown</Button>
+          <Button variant="contained" onClick={sendEvent}>Start</Button>
         </Box>
       </Drawer>
     </div>

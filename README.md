@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# CountDown-Timer
+We all have important events we look forward to in life, birthdays, anniversaries, and holidays to name a few. Wouldn't it be nice to have an app that counts down the months, days, hours, minutes, and seconds to an event? Countdown Timer is just that app!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The objective of Countdown Timer is to provide a continuously decrementing display of the he months, days, hours, minutes, and seconds to a user entered event.
 
-## Available Scripts
+## User Stories
 
-In the project directory, you can run:
+- User can see an event input box containing an event name field, an date field, an optional time, and a 'Start' button.
+- User can define the event by entering its name, the date it is scheduled to take place, and an optional time of the event.
+- User can see a warning message if the event name is blank.
+- User can see a warning message if the event date or time is not entered.
+- User can not enter an event date or time that is prior to the current time.
+- User can click on the 'Start' button to see the countdown timer start displaying the days, hours, minutes, and seconds until the event takes place.
+- User can see the elements in the countdown timer automatically decrement. For example, when the remaining seconds count reaches 0 the remaining minutes count will decrement by 1 and the seconds will start to countdown from 59. This progression must take place from seconds all the way up to the remaining days position in countdown display.
+- User can specify more than one event.
+- User can see a countdown timers for each event that has been defined.
 
-### `npm start`
+## Installation
+To run the project locally, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository: `git clone https://github.com/ZhenpengLin111/CountDown-Timer.git`
+2. Navigate to the project directory: `cd CountDown-Timer`
+3. Install dependencies: `npm install`
+4. Run the development server: `npm run dev`
+5. The project should now be running at `http://localhost:3000`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+Follow these steps to use the app:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-**Getting Started**
 
-### `npm run build`
+1. Open the App:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   - Navigate to `http://localhost:3000` in your web browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Define an Event:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   - In the event input box, enter the name of your event in the "Event Name" field.
+   - Select the date and time of your event using the date picker in the "Event Date" field.
 
-### `npm run eject`
+3. Start the Countdown:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   - Click the 'Start' button to initiate the countdown timer.
+   - The countdown timer will display the days, hours, minutes, and seconds remaining until your event.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Manage Events:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - If you leave the event name blank, you will see a warning message prompting you to enter an event name.
+   - If you do not enter a date and time, you will see a warning message prompting you to enter these details.
+   - Ensure the event date and time are not in the past; the app will not allow dates or times earlier than the current moment.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. View Multiple Events:
 
-## Learn More
+   - You can define multiple events.
+   - For each event you define, a separate countdown timer will appear, each decrementing in real-time.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Real-Time Countdown**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The countdown timer will automatically update, decrementing the time remaining until the event.
+- When the seconds count reaches 0, the minutes count will decrement by 1, and the seconds will start counting down from 59.
+- This progression continues up through the hours, days, and months until the event occurs.

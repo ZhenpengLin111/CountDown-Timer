@@ -2,7 +2,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import { Event } from './Components/Event';
 import { AddCountDown } from './Components/AddCountDown';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Header } from './Components/Header';
 import './App.scss'
 function App() {
@@ -36,7 +36,6 @@ function App() {
             return <Event t={event.time} n={event.eventName} key={event.id} id={event.id} onDel={onDel}/>
           })}
         </div>
-
         <AddCountDown onGetEvents={getEvents} />
       </LocalizationProvider>
     </div>
