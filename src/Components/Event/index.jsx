@@ -22,31 +22,32 @@ export const Event = ({ t, n, id, onDel }) => {
     setEventName(n)
   }, [n])
   useEffect(() => {
-    if(time && eventName) {
+    const handleCountDown = () => {
+      console.log(time)
+      if (timerRef.current) {
+        clearInterval(timerRef.current)
+      }
+
+      timerRef.current = setInterval(() => {
+        const countDown_ms = time.$d.getTime() - new Date().getTime()
+        msToTime(countDown_ms)
+        if (countDown_ms <= 0) {
+          clearInterval(timerRef.current)
+          setCountDown({
+            days: 'D',
+            hours: 'O',
+            minutes: 'N',
+            seconds: 'E'
+          })
+        }
+      }, 1000)
+    }
+    if (time && eventName) {
       handleCountDown()
     }
   }, [time, eventName])
 
-  const handleCountDown = () => {
-    console.log(time)
-    if (timerRef.current) {
-      clearInterval(timerRef.current)
-    }
 
-    timerRef.current = setInterval(() => {
-      const countDown_ms = time.$d.getTime() - new Date().getTime()
-      msToTime(countDown_ms)
-      if (countDown_ms <= 0) {
-        clearInterval(timerRef.current)
-        setCountDown({
-          days: 'D',
-          hours: 'O',
-          minutes: 'N',
-          seconds: 'E'
-        })
-      }
-    }, 1000)
-  }
 
   function msToTime(ms) {
     let seconds = Math.floor(ms / 1000);
@@ -113,7 +114,7 @@ export const Event = ({ t, n, id, onDel }) => {
           <ClearIcon />
         </button>
       </Box>
-      
+
     </div>
 
   )
