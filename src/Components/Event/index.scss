@@ -21,6 +21,13 @@
   .coming-soon {
     font-size: 2em;
     font-weight: 200;
+  }
+
+  .event-name {
+    transition: .8s ease;
+  }
+
+  .coming-soon {
     transition: 1s ease;
   }
 
@@ -76,7 +83,7 @@
 
   .event-name {
     color: #a696c8;
-    font-weight: 800;
+    // font-weight: 800;
   }
 
   .colon {
