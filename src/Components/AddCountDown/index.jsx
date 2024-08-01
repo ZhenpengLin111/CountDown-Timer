@@ -36,7 +36,7 @@ export const AddCountDown = ({ onGetEvents }) => {
   }
 
   const checkTimeInput = (e) => {
-    if(e.target.value === 'MM/DD/YYYY hh:mm aa') {
+    if (e.target.value === 'MM/DD/YYYY hh:mm aa') {
       setTimeError(true)
       setHelperText2('Please Select Event Time!')
     }
@@ -51,12 +51,17 @@ export const AddCountDown = ({ onGetEvents }) => {
       <div className='addBtn' onClick={() => setOpen(true)}>
         <AddIcon className='plusIcon' />
       </div>
-      <Drawer className='drawer' anchor='bottom' open={open} onClose={() => setOpen(false)}>
+      <Drawer
+        className='drawer'
+        anchor='bottom'
+        open={open}
+        sx={{ width: '50%' }}
+        onClose={() => setOpen(false)}>
         <Box sx={{ height: '500px' }}>
           <h1>Set Countdown</h1>
           <TextField className='textIpt' helperText={helperText1} error={nameError} onBlur={checkInput} id="outlined-basic" label="Event Name" variant="outlined" onChange={(e) => setEventName(e.target.value)} />
           <DateTimePicker
-          className='dateIpt'
+            className='dateIpt'
             disablePast
             label='Event Time'
             onChange={setTime}

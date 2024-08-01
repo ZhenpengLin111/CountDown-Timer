@@ -27,11 +27,10 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.css-9emuhu-MuiPaper-root-MuiDrawer-paper {
+.MuiPaper-root {
   border-radius: 20px;
   width: 500px;
   margin: auto;
-  background-color: rgba(0,0,0,0.8);
 
   .css-imtqqp {
     display: flex;
@@ -51,18 +50,28 @@
       margin-bottom: 10px;
     }
 
-    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    // .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    //   width: 300px;
+    // }
+
+    // .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+    //   width: 300px;
+    // }
+    .MuiFormControl-root {
       width: 300px;
     }
 
-    .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
-      width: 300px;
-    }
-
-    .css-sghohy-MuiButtonBase-root-MuiButton-root {
+    // .css-sghohy-MuiButtonBase-root-MuiButton-root {
+    //   background-color: black;
+    // }
+    // .css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+    //   background-color: silver;
+    //   color: black;
+    // }
+    .MuiButton-containedPrimary  {
       background-color: black;
     }
-    .css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+    .MuiButton-containedPrimary:hover {
       background-color: silver;
       color: black;
     }
