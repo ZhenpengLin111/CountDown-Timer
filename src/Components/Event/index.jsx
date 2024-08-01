@@ -25,7 +25,7 @@ export const Event = ({ t, n, id, onDel }) => {
     if(time && eventName) {
       handleCountDown()
     }
-  }, [time])
+  }, [time, eventName])
 
   const handleCountDown = () => {
     console.log(time)
