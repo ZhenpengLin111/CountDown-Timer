@@ -10,9 +10,9 @@ import { NowTime } from '../NowTIme';
 export const Header = () => {
   return (
     <div className='header'>
-      <Box sx={{ flexGrow: 1, width: '400px' }}>
-        <AppBar position="static">
-          <Toolbar style={{backgroundColor: 'white'}}>
+      {/* <Box sx={{ flexGrow: 1, width: '100%' }}>
+        <AppBar position="static" color='transparent'>
+          <Toolbar>
             <AlarmOnIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: 'black' }} />
             <Typography variant="h6" component="div" sx={{
               flexGrow: 1, fontFamily: 'monospace',
@@ -24,8 +24,10 @@ export const Header = () => {
             </Typography>
           </Toolbar>
         </AppBar>
-      </Box>
-      <NowTime />
+      </Box> */}
+      <AlarmOnIcon className='header-icon' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: 'black' }} />
+      <span>Countdown Timer</span>
+      {/* <NowTime /> */}
     </div>
 
   )

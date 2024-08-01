@@ -1,11 +1,12 @@
 .Event {
-  width: 50%;
+  width: 80%;
 }
 .Event-box {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  // background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent;
   color: black;
   text-align: center;
   padding: 20px 30px;
@@ -17,14 +18,18 @@
     margin: 0px;
   }
 
-  .event-name {
-    font-size: 3.5em;
-    color: white;
+  .event-name,
+  .coming-soon {
+    font-size: 2em;
+    font-weight: 200;
+    // color: white;
   }
 
   .countdown-container {
     margin-top: 30px;
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 
     .countdown {
       padding: 0px 15px;
@@ -33,12 +38,12 @@
       box-sizing: border-box;
       
       :nth-child(1) {
-        font-size: 4em;
+        font-size: 5em;
       }
     }
 
     .colon {
-      font-size: 3em;
+      font-size: 4em;
       color: silver;
     }
   }
@@ -66,7 +71,7 @@
 }
 
 .Event-box:hover {
-  background-color: rgba(0,0,0,0.6);
+  // background-color: rgba(0,0,0,0.6);
   transform: translateY(-4px);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: white;

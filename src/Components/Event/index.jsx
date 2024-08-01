@@ -86,9 +86,8 @@ export const Event = ({ t, n, id, onDel }) => {
         flexDirection="column"
         alignItems="center"
       >
-        <h1>COUNT DOWN </h1>
-        <h2>TO</h2>
-        <h1 className='event-name'>{eventName ? eventName : 'Event Name'}</h1>
+        <span className='event-name'>{eventName ? eventName : 'Event Name'}</span>
+        <span className='coming-soon'>COMING SOON</span>
         <div className='countdown-container'>
           <div className='countdown'>
             <span>{countDown.days}</span>

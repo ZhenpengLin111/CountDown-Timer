@@ -5,9 +5,10 @@
 .addBtn {
   margin: auto;
   margin-top: 40px;
-  width: 50%;
+  width: 500px;
   height: 350px;
-  background-color: rgba(0, 0, 0, 0.4);
+  // background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent;
   // filter: blur(8px);
   // -webkit-filter: blur(8px);
   display: flex;
@@ -23,7 +24,8 @@
 }
 
 .addBtn:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  // background-color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
   transform: translateY(-4px);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
