@@ -5,7 +5,6 @@
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  // background-color: rgba(0, 0, 0, 0.4);
   background-color: transparent;
   color: black;
   text-align: center;
@@ -22,10 +21,11 @@
   .coming-soon {
     font-size: 2em;
     font-weight: 200;
+    transition: 1s ease;
   }
 
   .countdown-container {
-    margin-top: 30px;
+    margin-top: 80px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -43,7 +43,7 @@
 
     .colon {
       font-size: 4em;
-      color: silver;
+      color: gray;
     }
   }
 
@@ -70,13 +70,13 @@
 }
 
 .Event-box:hover {
-  // background-color: rgba(0,0,0,0.6);
   transform: translateY(-4px);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: white;
 
   .event-name {
     color: #a696c8;
+    font-weight: 800;
   }
 
   .colon {

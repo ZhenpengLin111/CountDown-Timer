@@ -21,7 +21,6 @@
 }
 
 .addBtn:hover {
-  // background-color: rgba(0, 0, 0, 0.6);
   background-color: transparent;
   transform: translateY(-4px);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -50,24 +49,10 @@
       margin-bottom: 10px;
     }
 
-    // .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
-    //   width: 300px;
-    // }
-
-    // .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
-    //   width: 300px;
-    // }
     .MuiFormControl-root {
       width: 300px;
     }
 
-    // .css-sghohy-MuiButtonBase-root-MuiButton-root {
-    //   background-color: black;
-    // }
-    // .css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
-    //   background-color: silver;
-    //   color: black;
-    // }
     .MuiButton-containedPrimary  {
       background-color: black;
     }
