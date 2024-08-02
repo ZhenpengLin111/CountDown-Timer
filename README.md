@@ -3,6 +3,10 @@ We all have important events we look forward to in life, birthdays, anniversarie
 
 The objective of Countdown Timer is to provide a continuously decrementing display of the he months, days, hours, minutes, and seconds to a user entered event.
 
+## Demo
+
+You can see a live demo of the application [here](https://zplcountdown-timer.netlify.app).
+
 ## User Stories
 
 - User can see an event input box containing an event name field, an date field, an optional time, and a 'Start' button.
